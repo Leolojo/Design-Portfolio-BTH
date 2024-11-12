@@ -1,0 +1,87 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'blockquotes';
+@import 'code';
+@import 'variables';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 h2 h3 h4 h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: $background-color;
+  max-width: $body-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;      
+}
+
+.main {
+  flex: 1;
+  max-width: 70%;
+}
+
+.footer {
+  background-color: $background-alternative-color;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  color: $font-color;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header {
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    flex-shrink: 0;
+    margin-right: 1rem;
+  }
+
+  .title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .nav-toggle {
+    //flex-shrink: 0;
+    margin-left: auto;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+}
