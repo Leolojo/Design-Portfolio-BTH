@@ -2,6 +2,7 @@
 @import 'blockquotes';
 @import 'code';
 @import 'variables';
+@import 'technology';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -40,6 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 * {

@@ -13,5 +13,9 @@ NavigationIcons:
     - title: About
       icon: fas fa-user
 
+    - title: Technologies
+      icon: fas fa-border-all
 
+    - title: Docs
+      icon: fas fa-book
 ---

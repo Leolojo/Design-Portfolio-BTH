@@ -1,0 +1,88 @@
+.landingpage {
+  display: grid;
+  gap: 1em;
+}
+
+.landingpage h1 {
+  justify-self: center;
+  grid-column: span 3;
+}
+
+.landingpage a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.span-three {
+  grid-column: span 3;
+}
+
+.landingpage .box {
+  width: 100%;
+  height: 200px;
+  background-color: #f0ffff;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-radius: 15px;
+  border: 5px solid #000;
+}
+
+.sub-page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1em;
+}
+
+.sub-nav {
+  overflow-wrap: break-word;
+  background-color: #f0ffff;
+
+  border-radius: 15px;
+  border: 5px solid #000;
+}
+
+.nav-links {
+  font-size: 25px;
+  list-style: none;
+}
+
+.sub-content {
+  overflow-wrap: break-word;
+  width: 100%;
+  background-color: #f0ffff;
+  padding: 20px;
+
+  border-radius: 15px;
+  border: 5px solid #000;
+}
+
+@media (max-width: 767px) {
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+
+  .sub-nav {
+    display: none;
+  }
+
+  .span-two {
+    grid-column: span 1;
+  }
+
+  .span-three {
+    grid-column: span 1;
+  }
+}
